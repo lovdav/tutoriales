@@ -1,0 +1,22 @@
+mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=tmaven  -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=insumos -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+	mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=insumos-api -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+	mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=insumos-camel -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+	mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=insumos-control -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+	mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=insumos-core -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+	mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=insumos-model -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+	mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=insumos-persistence -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+	mvn archetype:generate -DgroupId=com.indeval.riesgos -DartifactId=insumos-web -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+
+mvn -Dmaven.repo.local=$HOME/.m2_adi/other/repository clean install -Dmaven.test.skip=true
+
+
+<!-- http://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>4.2.20.Final</version>
+</dependency>
